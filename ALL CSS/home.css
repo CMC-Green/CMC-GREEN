@@ -122,3 +122,46 @@ img {
 h3 {
   font-size: 25px;
 }
+/* dropdown */
+.dropdown-parent {
+    font-size: 24px;
+    font-weight: bold;
+  position: relative;
+}
+
+.navbar ul li ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  flex-direction: column;
+  padding: 0;
+  z-index: 1000;
+}
+
+.dropdown-parent:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 0;
+  width: 100%;
+  font-size: 22px;
+  white-space: nowrap;
+  font-weight: normal;
+  transform: none;
+}
+
+.dropdown-menu a {
+  padding: 18px 249px;
+  position: middle;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:hover {
+  background: #f1f1f1;
+  transform: none;
+}
