@@ -7,102 +7,80 @@
     <link rel="stylesheet" href="./ALL CSS/home.css" />
   </head>
   <body>
-    <img src="./IMG/imgHome/CMC GREEN (1).jpg" class="banner" />
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="./Chinhsach/chinhsach.html">Chính sách</a>
+        </li>
+        <li>
+          <a href="./Gioithieu/gt.html">Giới thiệu</a>
+        </li>
+        <li>
+          <a href="./Sanpham/sanpham.html">Sản phẩm</a>
+        </li>
+        <li>
+          <a href="./LienHe/lienhe.html">Liên hệ</a>
+        </li>
+      </ul>
 
-    <nav class="navbar">
       <ul>
-        <li class="active">
-          <a href="./index.html"><b>Trang chủ</b></a>
-        </li>
         <li>
-          <a href="./Chinhsach/chinhsach.html"><b>Chính sách</b></a>
+          <a href="./index.html"><img src="./IMG/imgHome/logohome.png" /></a>
         </li>
-        <li>
-          <a href="./Gioithieu/gt.html"><b>Giới thiệu</b></a>
+        <li class="hideOnMobile">
+          <a href="./Chinhsach/chinhsach.html">Chính sách</a>
         </li>
-        <li>
-          <a href="./Sanpham/sanpham.html"><b>Sản phẩm</b></a>
+        <li class="hideOnMobile">
+          <a href="./Gioithieu/gt.html">Giới thiệu</a>
         </li>
-        <li>
-          <a href="./LienHe/lienhe.html"><b>Liên hệ</b></a>
+        <li class="hideOnMobile">
+          <a href="./Sanpham/sanpham.html">Sản phẩm</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="./LienHe/lienhe.html">Liên hệ</a>
+        </li>
+        <li onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
         </li>
       </ul>
     </nav>
 
-    <div class="tieudesp">Sản phẩm : Rau</div>
-    <div class="sp-container">
-      <div class="sanpham">
-        <img src="./IMG/imgSP/RAU TẦM BÓP.jpg" />
-        <h3>Rau tằm bóp</h3>
-        <p class="price">5.000đ/100g</p>
-      </div>
-
-      <div class="sanpham">
-        <img src="./IMG/imgSP/raucaimeo.jpg" />
-        <h3>Rau Ngồng cải mèo</h3>
-        <p class="price">4.800đ/100g</p>
-      </div>
-
-      <div class="sanpham">
-        <img src="./IMG/imgSP/boconganh.jpg" />
-        <h3>Rau bồ công anh</h3>
-        <p class="price">7.800đ/100g</p>
-      </div>
-
-      <div class="sanpham">
-        <img src="./IMG/imgSP/raucukhoi.jpg" />
-        <h3>Rau củ khởi</h3>
-        <p class="price">8.600đ/100g</p>
-      </div>
-    </div>
-    <div class="tieudesp">Sản phẩm : Hoa quả</div>
-    <div class="sp-container">
-      <div class="sanpham">
-        <img src="./IMG/imgSP/chuoi.jpg" />
-        <h3>Chuối tiêu hữu cơ</h3>
-        <p class="price">6.500đ/100g</p>
-      </div>
-      <div class="sanpham">
-        <img src="./IMG/imgSP/duahau.jpg" />
-        <h3>Dưa hấu</h3>
-        <p class="price">10.000đ/1kg</p>
-      </div>
-      <div class="sanpham">
-        <img src="./IMG/imgSP/nhoxanh.jpg" />
-        <h3>Nho xanh</h3>
-        <p class="price">50.000đ/kg</p>
-      </div>
-      <div class="sanpham">
-        <img src="./IMG/imgSP/xoai.jpg" />
-        <h3>Xoài</h3>
-        <p class="price">55.000/kg</p>
-      </div>
-    </div>
-    <div class="tieudesp">Sản phẩm : Các loại nấm</div>
-    <div class="sp-container">
-      <div class="sanpham">
-        <img src="./IMG/imgSP/namkimc.jpg" />
-        <h3>Nấm kim châm</h3>
-        <p class="price">25.000đ/gói 200g</p>
-      </div>
-      <div class="sanpham">
-        <img src="./IMG/imgSP/namduiga.jpg" />
-        <h3>Nấm đùi gà</h3>
-        <p class="price">38.000đ/khay 300g</p>
-      </div>
-      <div class="sanpham">
-        <img src="./IMG/imgSP/namngoctram.jpg" />
-        <h3>Nấm ngọc châm</h3>
-        <p class="price">35.000đ/túi</p>
-      </div>
-      <div class="sanpham">
-        <img src="./IMG/imgSP/namsotrang.jpg" />
-        <h3>Nấm sò trắng</h3>
-        <p class="price">75.000đ/kg</p>
-      </div>
-    </div>
-    <footer class="footer">
-      <img src="./IMG/imgHome/Footer.jpg" />
-    </footer>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
