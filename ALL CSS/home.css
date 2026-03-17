@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  /* Loại bỏ kích cỡ mặc định  */
 }
 
 body {
   min-height: 100vh;
-  /* Đảm bảo nhìn toàn bộ nd */
   background-image: url(../IMG/imgHome/anhhead.jpg);
+  display: flex;
+  flex-direction: column;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,6 +16,10 @@ body {
 
 nav {
   background-color: white;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  z-index: 1000;
 }
 
 nav ul {
@@ -23,20 +27,22 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-  height: 55px;
+  height: 35px;
 }
 nav a {
   height: 100%;
-  padding: 0 36px;
+  padding: 0 30px;
   text-decoration: none;
-  /* bỏ dấu gạch ngang */
   display: flex;
   align-items: center;
   color: black;
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -58,8 +64,6 @@ img {
   right: 0;
   height: 100vh;
   z-index: 999;
-
-  /* z-index : đảm bảo nằm ngang navbar */
   background-color: rgba(255, 255, 255, 0.491);
   backdrop-filter: blur(10px);
   display: none;
@@ -81,3 +85,112 @@ img {
     display: none;
   }
 }
+
+
+.content-wrapper {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(to right, #c3e4b6, #2ad630);
+  color:#fff;
+  padding: 80px 0 30px;
+  font-size: 10px;
+  clear:both;
+  display: block;
+  font-size: 16px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  padding-top: 30px;
+}
+
+.row{
+  width:90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: black;
+  flex:1;
+  display: block;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.col:last-child {
+  border-right: none;
+}
+
+.logo {
+  width: 300px;
+  height: 90px;
+  margin-bottom: 5px;
+}
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 20px;
+  position: relative;
+  color:black;
+  margin-top: 0;
+  display:block;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a{
+  text-decoration: none;
+  color:black;
+}
+
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .far{
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+form input {
+  width:100%;
+  background: transparent;
+  color:black;
+  border:0;
+  outline: none;
+  padding-left:10px;
+}
+
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
