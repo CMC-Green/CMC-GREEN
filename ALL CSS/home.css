@@ -2,9 +2,16 @@ body {
   margin: 0;
   background: #ddd;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   font-size: 20px;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+.content-wrapper {
+  flex: 1;
 }
 
 .banner {
@@ -15,15 +22,100 @@ body {
   image-rendering: auto;
 }
 
-.footer {
+footer {
   width: 100%;
+  background: linear-gradient(to right, #c3e4b6, #2ad630);
+  color:#fff;
+  padding: 80px 0 30px;
+  font-size: 13px;
+  clear:both;
+  display: block;
+  font-size: 16px;
 }
 
-.footer img {
-  width: 100%;
-  height: 800px;
+.row{
+  width:90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: black;
+  flex:1;
   display: block;
 }
+
+
+.logo {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 20px;
+  position: relative;
+  color:black;
+  margin-top: 0;
+  display:block;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a{
+  text-decoration: none;
+  color:black;
+}
+
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .far{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width:100%;
+  background: transparent;
+  color:#ccc;
+  border:0;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
 .navbar {
   background-color: #96e983ed;
   width: 100%;
@@ -110,21 +202,10 @@ body {
   }
 }
 
-b {
-  font-size: 24px;
-}
-
-img {
-  max-width: 100%;
-  height: 500px;
-}
 
 .price {
   font-size: 25px;
   color: red;
-}
-h3 {
-  font-size: 25px;
 }
 /* dropdown */
 .dropdown-parent {
