@@ -270,21 +270,9 @@ hr {
 .section-title {
   text-align: center;
   font-size: 36px;
-  color: #2e7d32;
+  color: #000000;
   margin-bottom: 40px;
   position: relative;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background: #2ea913;
-  border-radius: 2px;
 }
 
 .products-grid {
