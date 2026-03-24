@@ -6,6 +6,7 @@
     <title>CMC GREEN</title>
 
     <link rel="stylesheet" href="../ALL CSS/design.css" />
+    <link rel="stylesheet" href="../ALL CSS/lienhe.css" />
     <script src="https://kit.fontawesome.com/b35f6463c5.js"></script>
   </head>
   <body>
@@ -84,10 +85,195 @@
         sidebar.style.display = "none";
       }
     </script>
-  </body>
-  <main class="content-wrapper">
-    </main>
-      <footer>
+
+    <div class="contact-hero">
+      <h1 class="contact-title">#CMC GREEN</h1>
+      <p class="contact-subtitle">
+        Kết nối với chúng tôi để nhận những ưu đãi tốt nhất
+      </p>
+    </div>
+
+    <!-- Contact Cards Section -->
+    <div class="contact-cards">
+      <!-- Facebook Card -->
+      <div class="contact-card">
+        <div class="card-icon">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <h2 class="card-title">Cmc Green Fanpage</h2>
+        <div class="card-content">
+          <p class="card-description">Rau gì đang trồng chúng tôi đều có!</p>
+          <p class="card-highlight">
+            CMC GREEN Fanpage là nơi có tốc độ phản hồi nhanh nhất Hà Đông, là
+            nơi bạn có thể yên tâm đặt hàng mà không phải lo mất thời gian.
+          </p>
+        </div>
+        <a
+          href="https://www.facebook.com/wedontactuallyhaveapagethisisallyouregonnaget"
+          target="_blank"
+          class="contact-btn"
+        >
+          LIÊN HỆ NGAY
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Instagram Card -->
+      <div class="contact-card">
+        <div class="card-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <h2 class="card-title">Cmc Green Instagram</h2>
+        <div class="card-content">
+          <p class="card-handle">@cmcgreen.only</p>
+          <p class="card-highlight">
+            CMC GREEN Instagram là nơi cập nhật hình ảnh rau sạch mới nhất, quy
+            trình trồng trọt và những mẹo vặt nấu ăn hữu ích.
+          </p>
+        </div>
+        <a
+          href="https://www.instagram.com/wedontactuallyhaveapagethisisallyouregonnaget"
+          target="_blank"
+          class="contact-btn"
+        >
+          LIÊN HỆ NGAY
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Form Section - Vertical Layout -->
+    <div class="contact-form-section">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Gửi tin nhắn cho chúng tôi</h2>
+          <p>
+            Mọi thắc mắc và góp ý, xin vui lòng điền vào form bên dưới. Chúng
+            tôi sẽ phản hồi trong vòng 24h.
+          </p>
+        </div>
+
+        <div class="form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"
+                  >Họ và tên <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nhập họ và tên"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Nhập email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" placeholder="Nhập số điện thoại" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Chủ đề</label>
+                <input type="text" id="subject" placeholder="Nhập chủ đề" />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message"
+                >Nội dung tin nhắn <span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Nhập nội dung tin nhắn..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Gửi tin nhắn
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <div class="contact-info">
+            <h3>Thông tin liên hệ</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-text">
+                <h4>Địa chỉ</h4>
+                <p>Số 84C, Đường Nguyễn Thanh Bình, Hà Đông, Hà Nội</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-text">
+                <h4>Điện thoại</h4>
+                <p>+84 945678913</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-text">
+                <h4>Email</h4>
+                <p>cmcgreen@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-text">
+                <h4>Giờ làm việc</h4>
+                <p>Thứ 2 - Thứ 7: 8:00 - 20:00<br />Chủ nhật: 8:00 - 17:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section">
+      <h2>Bản đồ đến CMC Green</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.98787654321!2d105.778954!3d20.971234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac7c8f8f8f8f%3A0x8f8f8f8f8f8f8f8f!2zSMOgIMSQw7RuZw!5e0!3m2!1svi!2s!4v1234567890!5m2!1svi!2s"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <footer>
       <div class="row">
         <div class="col">
           <a href="../index.html"
@@ -101,7 +287,10 @@
           </p>
         </div>
         <div class="col">
-          <h3>Liên hệ<div class = "underline"><span></span></div></h3>
+          <h3>
+            Liên hệ
+            <div class="underline"><span></span></div>
+          </h3>
           <p>Số 84C</p>
           <p>Đường Nguyễn Thanh Bình</p>
           <p>Hà Đông, Hà Nội</p>
@@ -109,7 +298,10 @@
           <h4>+84 945678913</h4>
         </div>
         <div class="col">
-          <h3>Liên kết<div class = "underline"><span></span></div></h3>
+          <h3>
+            Liên kết
+            <div class="underline"><span></span></div>
+          </h3>
           <ul>
             <li><a href="../index.html">Trang chủ</a></li>
             <li><a href="../Chinhsach/chinhsach.html">Chính sách </a></li>
@@ -119,7 +311,10 @@
           </ul>
         </div>
         <div class="col">
-          <h3>Đăng kí nhận tin<div class = "underline"><span></span></div></h3>
+          <h3>
+            Đăng kí nhận tin
+            <div class="underline"><span></span></div>
+          </h3>
           <form>
             <i class="fa-regular fa-envelope"></i>
             <input type="email" placeholder="Nhập email của bạn" required />
@@ -128,21 +323,49 @@
             </button>
           </form>
           <h4>Kết nối với chúng tôi!</h4>
-          <a href="https://www.facebook.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
+          <a
+            href="https://www.facebook.com/wedontactuallyhaveapagethisisallyouregonnaget"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
+          <a
+            href="https://www.instagram.com/wedontactuallyhaveapagethisisallyouregonnaget"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="https://www.whatsapp.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-whatsapp"></i>
+          <a
+            href="https://www.whatsapp.com/wedontactuallyhaveapagethisisallyouregonnaget"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
           </a>
-          <a href="https://www.telegram.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-telegram"></i>
+          <a
+            href="https://www.telegram.com/wedontactuallyhaveapagethisisallyouregonnaget"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-telegram"></i>
           </a>
         </div>
       </div>
-      <hr>
+      <hr />
       <p class="copyright">© 2026 CMC Green. All rights reserved.</p>
     </footer>
+
+    <script>
+      // Form submission handler
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Cảm ơn bạn đã gửi tin nhắn! Chúng tôi sẽ phản hồi sớm nhất.");
+          this.reset();
+        });
+    </script>
+  </body>
 </html>
