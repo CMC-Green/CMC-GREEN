@@ -192,7 +192,7 @@ img {
   right: 20px;
 }
 
-/* Chấm tròn chỉ mục */
+/* Chấm tròn */
 .slider-dots {
   position: absolute;
   bottom: 20px;
@@ -422,6 +422,7 @@ hr {
   margin-bottom: -13px;
   margin-top: -10px;
 }
+
 .products-grid-section {
   max-width: 1200px;
   margin: 50px auto;
@@ -433,7 +434,6 @@ hr {
   font-size: 36px;
   color: #000000;
   margin-bottom: 40px;
-  position: relative;
 }
 
 .products-grid {
