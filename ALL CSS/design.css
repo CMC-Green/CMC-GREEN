@@ -116,11 +116,11 @@ img {
 
 /* Ảnh cho từng slide */
 .slide:nth-child(1) {
-  background-image: url("../IMG/imgHome/anhslide1.jpg");
+  background-image: url("../IMG/imgHome/slide1.jpg");
 }
 
 .slide:nth-child(2) {
-  background-image: url("../IMG/imgHome/anhslide2.jpg");
+  background-image: url("../IMG/imgHome/slide2.jpg");
 }
 
 .slide:nth-child(3) {

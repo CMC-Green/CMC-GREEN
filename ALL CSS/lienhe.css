@@ -1,8 +1,7 @@
-/* Contact Page Styles */
-
-/* Hero Section */
 .contact-hero {
-  background: linear-gradient(135deg, #2ea913 0%, #1a6b0c 100%);
+  background-image: url(../IMG/imgLH/bglienhe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 80px 20px;
   text-align: center;
   color: white;
