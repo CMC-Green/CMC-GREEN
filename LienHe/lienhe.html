@@ -177,30 +177,61 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label for="phone">Số điện thoại</label>
-                <input type="tel" id="phone" placeholder="Nhập số điện thoại" />
+                <label for="phone"
+                  >Số điện thoại <span class="required">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Nhập số điện thoại"
+                  required
+                />
               </div>
 
               <div class="form-group">
-                <label for="subject">Chủ đề</label>
-                <input type="text" id="subject" placeholder="Nhập chủ đề" />
+                <label for="product-type">Loại sản phẩm</label>
+                <select id="product-type">
+                  <option value="">Chọn loại sản phẩm</option>
+                  <option value="rau-cu">Rau củ quả</option>
+                  <option value="nam">Các loại nấm</option>
+                  <option value="trai-cay">Trái cây</option>
+                  <option value="khac">Khác</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="product-name">Tên sản phẩm</label>
+                <input
+                  type="text"
+                  id="product-name"
+                  placeholder="Nhập tên sản phẩm muốn đặt"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="quantity">Số lượng</label>
+                <input
+                  type="number"
+                  id="quantity"
+                  placeholder="Nhập số lượng (kg/gói)"
+                  min="1"
+                />
               </div>
             </div>
 
             <div class="form-group full-width">
-              <label for="message"
-                >Nội dung tin nhắn <span class="required">*</span></label
-              >
+              <label for="note">Ghi chú</label>
               <textarea
-                id="message"
-                rows="6"
-                placeholder="Nhập nội dung tin nhắn..."
-                required
+                id="note"
+                rows="4"
+                placeholder="Ghi chú thêm về đơn hàng (địa chỉ giao hàng, thời gian nhận, yêu cầu đặc biệt...)"
               ></textarea>
             </div>
 
             <button type="submit" class="submit-btn">
-              Gửi tin nhắn
+              Gửi đơn hàng
               <i class="fas fa-paper-plane"></i>
             </button>
           </form>
@@ -354,12 +385,33 @@
     </footer>
 
     <script>
-      // Form submission handler
       document
         .getElementById("contactForm")
         .addEventListener("submit", function (e) {
           e.preventDefault();
-          alert("Cảm ơn bạn đã gửi tin nhắn! Chúng tôi sẽ phản hồi sớm nhất.");
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const productType = document.getElementById("product-type").value;
+          const productName = document.getElementById("product-name").value;
+          const quantity = document.getElementById("quantity").value;
+          const note = document.getElementById("note").value;
+
+          let message = `ĐƠN HÀNG MỚI\n\n`;
+          message += `Họ tên: ${name}\n`;
+          message += `Email: ${email}\n`;
+          message += `SĐT: ${phone}\n`;
+          message += `Loại sản phẩm: ${productType || "Chưa chọn"}\n`;
+          message += `Tên sản phẩm: ${productName || "Chưa nhập"}\n`;
+          message += `Số lượng: ${quantity || "Chưa nhập"}\n`;
+          message += `Ghi chú: ${note || "Không có"}\n`;
+
+          alert(
+            "Cảm ơn bạn đã đặt hàng!\n\n" +
+              message +
+              "\n\nChúng tôi sẽ liên hệ xác nhận trong ít phút.",
+          );
           this.reset();
         });
     </script>

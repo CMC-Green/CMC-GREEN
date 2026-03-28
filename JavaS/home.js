@@ -57,3 +57,43 @@ if (sliderContainer) {
     autoSlideInterval = setInterval(autoSlide, 5000);
   });
 }
+
+// vid
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector(".intro-video");
+  const playPauseBtn = document.getElementById("playPauseBtn");
+
+  if (video && playPauseBtn) {
+    // Video bắt đầu ở trạng thái dừng
+    video.pause();
+    playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+
+    // Handle play/pause button
+    playPauseBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (video.paused) {
+        video.play();
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        video.pause();
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+      }
+    });
+
+    // Update button when video ends
+    video.addEventListener("ended", () => {
+      playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+    });
+
+    // Click on video to play/pause
+    video.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        video.pause();
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+      }
+    });
+  }
+});
