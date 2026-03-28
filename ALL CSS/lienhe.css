@@ -43,10 +43,21 @@
   box-shadow: 0 20px 40px rgba(46, 169, 19, 0.2);
 }
 
-.card-icon {
+.card-icon1 {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #2ea913, #56ce3b);
+  background: linear-gradient(135deg, #2c18a2, #223ec8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+}
+
+.card-icon2 {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #d11985, #861484);
   border-radius: 50%;
   display: flex;
   align-items: center;
