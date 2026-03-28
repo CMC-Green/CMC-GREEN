@@ -116,15 +116,15 @@ img {
 
 /* Ảnh cho từng slide */
 .slide:nth-child(1) {
-  background-image: url("../IMG/imgHome/slide1.jpg");
+  background-image: url("../IMG/imgHome/slidenew1.jpg");
 }
 
 .slide:nth-child(2) {
-  background-image: url("../IMG/imgHome/slide2.jpg");
+  background-image: url("../IMG/imgHome/slidenew2.jpg");
 }
 
 .slide:nth-child(3) {
-  background-image: url("../IMG/imgHome/anhslide4.jpg");
+  background-image: url("../IMG/imgHome/slidenew3.jpg");
 }
 
 .slide-content {
@@ -492,7 +492,8 @@ hr {
 
 .grid-card-content h3 {
   font-size: 24px;
-  color: #2e7d32;
+  color: #000000;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
