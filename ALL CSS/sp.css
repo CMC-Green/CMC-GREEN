@@ -1,10 +1,10 @@
 body {
-  background-image: url(../IMG/imgHome/sayangq8.jpg);
+  background-image: url(../IMG/imgHome/3606323.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
