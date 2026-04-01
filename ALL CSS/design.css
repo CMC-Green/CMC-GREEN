@@ -698,7 +698,7 @@ hr {
   display: none !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   footer{
     bottom: unset;
   }
