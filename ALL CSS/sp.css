@@ -189,3 +189,65 @@ body {
     transform: translateY(0);
   }
 }
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  
+  /* Reset the container and sections */
+  .container, 
+  .category-section {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Navigation: Hide desktop links, show menu button */
+  .hideOnMobile {
+    display: none;
+  }
+
+  /* Stack the Featured Grid into 1 column */
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Stack Search Controls vertically */
+  .search-controls {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  #searchInput, 
+  #categoryFilter, 
+  #searchBtn {
+    max-width: 100%;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* Adjust Product Cards for smaller screens */
+  .product-card {
+    flex: 0 0 200px; /* Slightly smaller cards on mobile */
+    margin: 0 5px;
+  }
+
+  .product-card img {
+    width: 160px;
+    height: 120px;
+  }
+
+  /* Stack Footer Columns */
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .col {
+    margin-bottom: 30px;
+  }
+
+  .footer .underline {
+    margin: 0 auto; /* Center the underlines */
+  }
+}
