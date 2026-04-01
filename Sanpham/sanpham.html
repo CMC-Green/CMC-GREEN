@@ -173,7 +173,7 @@
     this.container = section.querySelector('.scroll-container');
     this.requestID = null;
     this.pos = 0;
-    this.speed = 0.8;
+    this.speed = 0.3;
     this.isPaused = false;
 
     this.container.addEventListener('mouseenter', () => this.isPaused = true);
@@ -207,8 +207,7 @@
     }
 
     this.track.classList.remove('static-track');
-    const originalCards = Array.from(this.track.querySelectorAll('.product-card'))
-                               .filter(c => c.style.display !== 'none');
+    const originalCards = Array.from(this.track.querySelectorAll('.product-card')).filter(c => c.style.display !== 'none');
     
     originalCards.forEach(card => {
       const clone = card.cloneNode(true);
