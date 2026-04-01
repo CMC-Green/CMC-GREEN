@@ -697,3 +697,33 @@ hr {
 .section-title::before {
   display: none !important;
 }
+
+@media (max-width: 991px) {
+  .footer .col {
+    flex: 1 1 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .row {
+    flex-direction: column;
+  }
+
+  .footer .col {
+    width: 100%;
+  }
+
+  .footer .underline {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+  }
+
+  .footer form {
+    justify-content: center;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
